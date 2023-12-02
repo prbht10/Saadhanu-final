@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart Page </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <div class="container">
+        <img src="assets/images/saadhanu-logo.png" alt="logo"/>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-buttons" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cars.html"> Cars </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="twowheeler.html"> Two-Wheelers </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact Us </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="cart.html"> <i class="fas fa-shopping-cart"> </i> </a>
+             <a href="account.html"> <i class="fas fa-user"> </i> </a>
+           
+            </li>
+           
+            
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+
+      <!--Cart-->
+      <section class="cart container my-5 py-5">
+        <div class="container mt-5">
+            <h2 class="font-weight-bolde"> Your Cart </h2>
+            
+
+        </div>
+        <table class="mt-5 pt-5">
+           <tr>
+            <th> Product </th>
+            <th> Quantity </th>
+            <th> Subtotal </th>
+           </tr>
+           <tr>
+            <td>
+                <div class="product-info">
+                  <img src="assets/images/tvs raid.png" alt="">
+                  <div>
+                    <p> TVS Raider 125 </p>
+                    <small> <span> Rs.</span>1,75,000</small>
+                    <br>
+                    <a class="remove-btn" href="#"> Remove </a>
+                  </div>
+                </div>
+            </td>
+
+            <td>
+                <input type="number" value="1">
+                <a class="edit-btn" href="#"> Edit </a>
+            </td>
+
+            <td>
+                <span> Rs.</span>
+                <span class="product-price">175,000</span>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+                <div class="product-info">
+                  <img src="assets/images/tvs raid.png" alt="">
+                  <div>
+                    <p> TVS Raider 125 </p>
+                    <small> <span> Rs.</span>1,75,000</small>
+                    <br>
+                    <a class="remove-btn" href="#"> Remove </a>
+                  </div>
+                </div>
+            </td>
+
+            <td>
+                <input type="number" value="1">
+                <a class="edit-btn" href="#"> Edit </a>
+            </td>
+
+            <td>
+                <span> Rs.</span>
+                <span class="product-price">175,000</span>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+                <div class="product-info">
+                  <img src="assets/images/tvs raid.png" alt="">
+                  <div>
+                    <p> TVS Raider 125 </p>
+                    <small> <span> Rs.</span>1,75,000</small>
+                    <br>
+                    <a class="remove-btn" href="#"> Remove </a>
+                  </div>
+                </div>
+            </td>
+
+            <td>
+                <input type="number" value="1">
+                <a class="edit-btn" href="#"> Edit </a>
+            </td>
+
+            <td>
+                <span> Rs.</span>
+                <span class="product-price">175,000</span>
+            </td>
+           </tr>
+        </table>
+        
+        <div class="cart-total">
+            <table>
+                <tr>
+                    <td> Subtotal </td>
+                    <td> Rs.175,000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs.175,000</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="checkout-container">
+        <button class="btn checkout-btn"> Checkout </button>
+        </div>
+
+         </section>
+
+
+
+
+
+      <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+          
+        <h6>About</h6>
+        <p class="text-justify">Saadhanu is a web-based platform where you can safely buy and sell new or used cars, bikes, 
+          and scooters. 
+          Enjoy special discounts, compare vehicles, connect with experts, and get dedicated customer 
+          care. <br> Simplifying vehicle trading for you.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="twowheeler.html">Two-Wheelers</a></li>
+          <li><a href="cars.html">Cars</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Call Experts </a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by P & S
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

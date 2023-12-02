@@ -1,0 +1,126 @@
+tvs raider 125:
+
+Mileage: 55 kmpl  
+Displacement: 124.8 cc 
+Engine Type:  Air & Oil cooled single cylinder
+Fuel Capacity: 10L
+Vehicle Status: First-Hand 
+Seller: Ram Prasad Karki
+
+yamaha rayzr 125 fi:
+
+Mileage: 50 kmpl  
+Displacement: 125 cc 
+Engine Type:  Air cooled, 4-stroke,SOHC, 2-valve
+Fuel Capacity: 5.2L
+Vehicle Status: second-Hand
+Seller: Manmaya Budathoki
+
+honda dio dlx:
+
+Mileage: 42 kmpl  
+Displacement: 109.51 cc 
+Engine Type:  Air cooled, 4-stroke,SI Engine
+Fuel Capacity: 5.3L
+Vehicle Status: second-Hand
+Seller: Vhim KC
+
+hero xpulse 200 4v:
+
+Mileage: 35 kmpl  
+Displacement: 199.6 cc 
+Engine Type: Oil cooled, 4 Stroke 4 Valve Single cylinder OHC
+Fuel Capacity: 13L
+Vehicle Status: First-Hand
+Seller: Aryan Shrestha
+
+kia seltos htk:
+
+Mileage: 14 kmpl
+Displacement: 1497 cc 
+Engine Type: SmartStream G1.5 4 cylinder Manual Transmission
+Fuel Capacity: 50L
+Vehicle Status: First-Hand
+Seller: Saurav Shrestha
+
+hyundai i20:
+
+Mileage: 20.5 kmpl
+Displacement: 1197 cc 
+Engine Type: 1.2L Kappa 4 cylinder Automatic Transmission
+Fuel Capacity: 37L
+Vehicle Status: First-Hand
+Seller: Avash Adhikari
+
+Tata Nexon EV:
+
+Range: 400 km
+Battery Capacity: 40.5 kWh
+Motor Type: Permanent Magnet Synchronous with Automatic Transmission
+Charging time: 6.5Hrs (AC) and 1.5Hrs (DC)
+Vehicle Status: First-Hand
+Seller: Sujan Pokhrael
+
+Maruti Suzuki Swift:
+
+Mileage: 19.5 kmpl
+Displacement: 1197 cc 
+Engine Type: K series Dual jet 4 cylinder Manual Transmission
+Fuel Capacity: 37L
+Vehicle Status: Second-Hand
+Seller: Rana Singh Thakuri
+
+
+
+Suzuki Vitara Brezza:
+
+Mileage: 18.5 kmpl
+Displacement: 1462 cc 
+Engine Type: K15B ISG Petrol Engine Manual Transmission
+Fuel Capacity: 48L
+Vehicle Status: First-Hand
+Seller: Jyoti Khadka
+
+
+
+ //for cars
+
+            $car_array_ids = array_column($_SESSION['cart'], "car_id"); // [2,3,5,10]
+
+        // if vehicle has already been added to cart or not
+        if(!in_array($_POST['car_id'], $car_array_ids)){
+
+            
+            
+      
+            $car_array= array(
+                             'car_id'=> $_POST['car_id'],
+                             'car_name'=> $_POST['car_name'],
+                             'car_price'=> $_POST['car_price'],
+                             'car_image'=> $_POST['car_image'],
+                             'car_quantity'=> $_POST['car_quantity']
+      
+            );
+      
+            $_SESSION['cart'][$car_id] = $car_array;
+
+
+ $car_id= $_POST['car_id'];
+        $car_name= $_POST['car_name'];
+        $car_price= $_POST['car_price'];
+        $car_image= $_POST['car_image'];
+        $car_quantity= $_POST['car_quantity'];
+  
+        $car_array= array(
+                         'car_id'=> $car_id,
+                         'car_name'=> $car_name,
+                         'car_price'=> $car_price,
+                         'car_image'=> $car_image,
+                         'car_quantity'=> $car_quantity
+  
+        );
+  
+        $_SESSION['cart'][$car_id] = $car_array;
+
+
+
